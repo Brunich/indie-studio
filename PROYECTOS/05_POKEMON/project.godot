@@ -1,0 +1,21 @@
+; Engine configuration file.
+; Pokémon Fan Game — IndieStudio Bruno Salas
+; Godot 4.2+
+
+[application]
+config/name="Pokémon — El Registro Eterno"
+run/main_scene="res://escenas/overworld/overworld.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://sprites/ui/icon.svg"
+
+[autoload]
+
+[display]
+window/size/viewport_width=480
+window/size/viewport_height=320
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+window/pixel_snap=true
+
+[rendering]
+textures/canvas_textures/default_texture_filter=0

@@ -1,0 +1,1200 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Bulbasaur",
+    "name_es": "Bulbasaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 45,
+      "attack": 49,
+      "defense": 49,
+      "sp_attack": 65,
+      "sp_defense": 65,
+      "speed": 45
+    },
+    "base_exp": 64,
+    "evolves_to": 1,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ],
+      [
+        7,
+        "vine_whip"
+      ],
+      [
+        13,
+        "poison_sting"
+      ],
+      [
+        22,
+        "razor_leaf"
+      ],
+      [
+        30,
+        "sleep_powder"
+      ]
+    ]
+  },
+  "2": {
+    "id": 2,
+    "name": "Ivysaur",
+    "name_es": "Ivysaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "attack": 62,
+      "defense": 63,
+      "sp_attack": 80,
+      "sp_defense": 80,
+      "speed": 60
+    },
+    "base_exp": 142,
+    "evolves_to": 2,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Venusaur",
+    "name_es": "Venusaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 80,
+      "attack": 82,
+      "defense": 83,
+      "sp_attack": 100,
+      "sp_defense": 100,
+      "speed": 80
+    },
+    "base_exp": 236,
+    "evolves_to": 3,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "4": {
+    "id": 4,
+    "name": "Charmander",
+    "name_es": "Charmander",
+    "types": [
+      "fire"
+    ],
+    "base_stats": {
+      "hp": 39,
+      "attack": 52,
+      "defense": 43,
+      "sp_attack": 60,
+      "sp_defense": 50,
+      "speed": 65
+    },
+    "base_exp": 62,
+    "evolves_to": 4,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "scratch"
+      ],
+      [
+        1,
+        "growl"
+      ],
+      [
+        9,
+        "ember"
+      ],
+      [
+        15,
+        "smokescreen"
+      ],
+      [
+        22,
+        "fire_spin"
+      ],
+      [
+        31,
+        "slash"
+      ]
+    ]
+  },
+  "5": {
+    "id": 5,
+    "name": "Charmeleon",
+    "name_es": "Charmeleon",
+    "types": [
+      "fire"
+    ],
+    "base_stats": {
+      "hp": 58,
+      "attack": 64,
+      "defense": 58,
+      "sp_attack": 80,
+      "sp_defense": 65,
+      "speed": 80
+    },
+    "base_exp": 142,
+    "evolves_to": 5,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "6": {
+    "id": 6,
+    "name": "Charizard",
+    "name_es": "Charizard",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 78,
+      "attack": 84,
+      "defense": 78,
+      "sp_attack": 109,
+      "sp_defense": 85,
+      "speed": 100
+    },
+    "base_exp": 240,
+    "evolves_to": 6,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "7": {
+    "id": 7,
+    "name": "Squirtle",
+    "name_es": "Squirtle",
+    "types": [
+      "water"
+    ],
+    "base_stats": {
+      "hp": 44,
+      "attack": 48,
+      "defense": 65,
+      "sp_attack": 50,
+      "sp_defense": 64,
+      "speed": 43
+    },
+    "base_exp": 63,
+    "evolves_to": 7,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "tail_whip"
+      ],
+      [
+        7,
+        "water_gun"
+      ],
+      [
+        13,
+        "bite"
+      ],
+      [
+        22,
+        "rapid_spin"
+      ],
+      [
+        28,
+        "protect"
+      ]
+    ]
+  },
+  "8": {
+    "id": 8,
+    "name": "Wartortle",
+    "name_es": "Wartortle",
+    "types": [
+      "water"
+    ],
+    "base_stats": {
+      "hp": 59,
+      "attack": 63,
+      "defense": 80,
+      "sp_attack": 65,
+      "sp_defense": 80,
+      "speed": 58
+    },
+    "base_exp": 142,
+    "evolves_to": 8,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "9": {
+    "id": 9,
+    "name": "Blastoise",
+    "name_es": "Blastoise",
+    "types": [
+      "water"
+    ],
+    "base_stats": {
+      "hp": 79,
+      "attack": 83,
+      "defense": 100,
+      "sp_attack": 85,
+      "sp_defense": 105,
+      "speed": 78
+    },
+    "base_exp": 239,
+    "evolves_to": 9,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "10": {
+    "id": 10,
+    "name": "Caterpie",
+    "name_es": "Caterpie",
+    "types": [
+      "bug"
+    ],
+    "base_stats": {
+      "hp": 45,
+      "attack": 30,
+      "defense": 35,
+      "sp_attack": 20,
+      "sp_defense": 20,
+      "speed": 45
+    },
+    "base_exp": 53,
+    "evolves_to": 11,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "11": {
+    "id": 11,
+    "name": "Metapod",
+    "name_es": "Metapod",
+    "types": [
+      "bug"
+    ],
+    "base_stats": {
+      "hp": 50,
+      "attack": 20,
+      "defense": 55,
+      "sp_attack": 25,
+      "sp_defense": 25,
+      "speed": 30
+    },
+    "base_exp": 72,
+    "evolves_to": 12,
+    "catch_rate": 120,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "12": {
+    "id": 12,
+    "name": "Butterfree",
+    "name_es": "Butterfree",
+    "types": [
+      "bug",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 50,
+      "sp_attack": 90,
+      "sp_defense": 80,
+      "speed": 70
+    },
+    "base_exp": 160,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "13": {
+    "id": 13,
+    "name": "Weedle",
+    "name_es": "Weedle",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 40,
+      "attack": 35,
+      "defense": 30,
+      "sp_attack": 20,
+      "sp_defense": 20,
+      "speed": 50
+    },
+    "base_exp": 52,
+    "evolves_to": 14,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "14": {
+    "id": 14,
+    "name": "Kakuna",
+    "name_es": "Kakuna",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 45,
+      "attack": 25,
+      "defense": 50,
+      "sp_attack": 25,
+      "sp_defense": 25,
+      "speed": 35
+    },
+    "base_exp": 72,
+    "evolves_to": 15,
+    "catch_rate": 120,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "15": {
+    "id": 15,
+    "name": "Beedrill",
+    "name_es": "Beedrill",
+    "types": [
+      "bug",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 65,
+      "attack": 90,
+      "defense": 40,
+      "sp_attack": 45,
+      "sp_defense": 80,
+      "speed": 75
+    },
+    "base_exp": 159,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "16": {
+    "id": 16,
+    "name": "Pidgey",
+    "name_es": "Pidgey",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 40,
+      "sp_attack": 35,
+      "sp_defense": 35,
+      "speed": 56
+    },
+    "base_exp": 55,
+    "evolves_to": 17,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "17": {
+    "id": 17,
+    "name": "Pidgeotto",
+    "name_es": "Pidgeotto",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 63,
+      "attack": 60,
+      "defense": 55,
+      "sp_attack": 50,
+      "sp_defense": 50,
+      "speed": 71
+    },
+    "base_exp": 113,
+    "evolves_to": 18,
+    "catch_rate": 120,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "18": {
+    "id": 18,
+    "name": "Pidgeot",
+    "name_es": "Pidgeot",
+    "types": [
+      "normal",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 83,
+      "attack": 80,
+      "defense": 75,
+      "sp_attack": 70,
+      "sp_defense": 70,
+      "speed": 101
+    },
+    "base_exp": 216,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "19": {
+    "id": 19,
+    "name": "Rattata",
+    "name_es": "Rattata",
+    "types": [
+      "normal"
+    ],
+    "base_stats": {
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "sp_attack": 25,
+      "sp_defense": 35,
+      "speed": 72
+    },
+    "base_exp": 57,
+    "evolves_to": 20,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "20": {
+    "id": 20,
+    "name": "Raticate",
+    "name_es": "Raticate",
+    "types": [
+      "normal"
+    ],
+    "base_stats": {
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "sp_attack": 50,
+      "sp_defense": 70,
+      "speed": 97
+    },
+    "base_exp": 116,
+    "evolves_to": 0,
+    "catch_rate": 127,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "25": {
+    "id": 25,
+    "name": "Pikachu",
+    "name_es": "Pikachu",
+    "types": [
+      "electric"
+    ],
+    "base_stats": {
+      "hp": 35,
+      "attack": 55,
+      "defense": 40,
+      "sp_attack": 50,
+      "sp_defense": 50,
+      "speed": 90
+    },
+    "base_exp": 112,
+    "evolves_to": 26,
+    "catch_rate": 190,
+    "levelup_moves": [
+      [
+        1,
+        "thundershock"
+      ],
+      [
+        1,
+        "growl"
+      ],
+      [
+        9,
+        "quick_attack"
+      ],
+      [
+        16,
+        "thunderwave"
+      ],
+      [
+        26,
+        "thunderbolt"
+      ],
+      [
+        33,
+        "agility"
+      ]
+    ]
+  },
+  "26": {
+    "id": 26,
+    "name": "Raichu",
+    "name_es": "Raichu",
+    "types": [
+      "electric"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "sp_attack": 90,
+      "sp_defense": 80,
+      "speed": 110
+    },
+    "base_exp": 218,
+    "evolves_to": 0,
+    "catch_rate": 75,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "39": {
+    "id": 39,
+    "name": "Jigglypuff",
+    "name_es": "Jigglypuff",
+    "types": [
+      "normal",
+      "fairy"
+    ],
+    "base_stats": {
+      "hp": 115,
+      "attack": 45,
+      "defense": 20,
+      "sp_attack": 45,
+      "sp_defense": 25,
+      "speed": 20
+    },
+    "base_exp": 76,
+    "evolves_to": 40,
+    "catch_rate": 170,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "52": {
+    "id": 52,
+    "name": "Meowth",
+    "name_es": "Meowth",
+    "types": [
+      "normal"
+    ],
+    "base_stats": {
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "sp_attack": 40,
+      "sp_defense": 40,
+      "speed": 90
+    },
+    "base_exp": 69,
+    "evolves_to": 53,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "54": {
+    "id": 54,
+    "name": "Psyduck",
+    "name_es": "Psyduck",
+    "types": [
+      "water"
+    ],
+    "base_stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "sp_attack": 65,
+      "sp_defense": 50,
+      "speed": 55
+    },
+    "base_exp": 80,
+    "evolves_to": 55,
+    "catch_rate": 190,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "63": {
+    "id": 63,
+    "name": "Abra",
+    "name_es": "Abra",
+    "types": [
+      "psychic"
+    ],
+    "base_stats": {
+      "hp": 25,
+      "attack": 20,
+      "defense": 15,
+      "sp_attack": 105,
+      "sp_defense": 55,
+      "speed": 90
+    },
+    "base_exp": 73,
+    "evolves_to": 64,
+    "catch_rate": 200,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "66": {
+    "id": 66,
+    "name": "Machop",
+    "name_es": "Machop",
+    "types": [
+      "fighting"
+    ],
+    "base_stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 50,
+      "sp_attack": 35,
+      "sp_defense": 35,
+      "speed": 35
+    },
+    "base_exp": 75,
+    "evolves_to": 67,
+    "catch_rate": 180,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "74": {
+    "id": 74,
+    "name": "Geodude",
+    "name_es": "Geodude",
+    "types": [
+      "rock",
+      "ground"
+    ],
+    "base_stats": {
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "sp_attack": 30,
+      "sp_defense": 30,
+      "speed": 20
+    },
+    "base_exp": 73,
+    "evolves_to": 75,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "94": {
+    "id": 94,
+    "name": "Gengar",
+    "name_es": "Gengar",
+    "types": [
+      "ghost",
+      "poison"
+    ],
+    "base_stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "sp_attack": 130,
+      "sp_defense": 75,
+      "speed": 110
+    },
+    "base_exp": 225,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "hypnosis"
+      ],
+      [
+        1,
+        "lick"
+      ],
+      [
+        29,
+        "night_shade"
+      ],
+      [
+        38,
+        "mean_look"
+      ],
+      [
+        46,
+        "dream_eater"
+      ],
+      [
+        54,
+        "destiny_bond"
+      ]
+    ]
+  },
+  "129": {
+    "id": 129,
+    "name": "Magikarp",
+    "name_es": "Magikarp",
+    "types": [
+      "water"
+    ],
+    "base_stats": {
+      "hp": 20,
+      "attack": 10,
+      "defense": 55,
+      "sp_attack": 15,
+      "sp_defense": 20,
+      "speed": 80
+    },
+    "base_exp": 40,
+    "evolves_to": 130,
+    "catch_rate": 255,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "130": {
+    "id": 130,
+    "name": "Gyarados",
+    "name_es": "Gyarados",
+    "types": [
+      "water",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "sp_attack": 60,
+      "sp_defense": 100,
+      "speed": 81
+    },
+    "base_exp": 214,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "133": {
+    "id": 133,
+    "name": "Eevee",
+    "name_es": "Eevee",
+    "types": [
+      "normal"
+    ],
+    "base_stats": {
+      "hp": 55,
+      "attack": 55,
+      "defense": 50,
+      "sp_attack": 45,
+      "sp_defense": 65,
+      "speed": 55
+    },
+    "base_exp": 92,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "143": {
+    "id": 143,
+    "name": "Snorlax",
+    "name_es": "Snorlax",
+    "types": [
+      "normal"
+    ],
+    "base_stats": {
+      "hp": 160,
+      "attack": 110,
+      "defense": 65,
+      "sp_attack": 65,
+      "sp_defense": 110,
+      "speed": 30
+    },
+    "base_exp": 154,
+    "evolves_to": 0,
+    "catch_rate": 25,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "147": {
+    "id": 147,
+    "name": "Dratini",
+    "name_es": "Dratini",
+    "types": [
+      "dragon"
+    ],
+    "base_stats": {
+      "hp": 41,
+      "attack": 64,
+      "defense": 45,
+      "sp_attack": 50,
+      "sp_defense": 50,
+      "speed": 50
+    },
+    "base_exp": 67,
+    "evolves_to": 148,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "148": {
+    "id": 148,
+    "name": "Dragonair",
+    "name_es": "Dragonair",
+    "types": [
+      "dragon"
+    ],
+    "base_stats": {
+      "hp": 61,
+      "attack": 84,
+      "defense": 65,
+      "sp_attack": 70,
+      "sp_defense": 70,
+      "speed": 70
+    },
+    "base_exp": 144,
+    "evolves_to": 149,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "149": {
+    "id": 149,
+    "name": "Dragonite",
+    "name_es": "Dragonite",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "base_stats": {
+      "hp": 91,
+      "attack": 134,
+      "defense": 95,
+      "sp_attack": 100,
+      "sp_defense": 100,
+      "speed": 80
+    },
+    "base_exp": 270,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "150": {
+    "id": 150,
+    "name": "Mewtwo",
+    "name_es": "Mewtwo",
+    "types": [
+      "psychic"
+    ],
+    "base_stats": {
+      "hp": 106,
+      "attack": 110,
+      "defense": 90,
+      "sp_attack": 154,
+      "sp_defense": 90,
+      "speed": 130
+    },
+    "base_exp": 306,
+    "evolves_to": 0,
+    "catch_rate": 3,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  },
+  "151": {
+    "id": 151,
+    "name": "Mew",
+    "name_es": "Mew",
+    "types": [
+      "psychic"
+    ],
+    "base_stats": {
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "sp_attack": 100,
+      "sp_defense": 100,
+      "speed": 100
+    },
+    "base_exp": 270,
+    "evolves_to": 0,
+    "catch_rate": 45,
+    "levelup_moves": [
+      [
+        1,
+        "tackle"
+      ],
+      [
+        1,
+        "growl"
+      ]
+    ]
+  }
+}
