@@ -1,0 +1,21 @@
+# Credenciales
+.github_token
+*.token
+*.env
+
+# Godot
+.godot/
+*.import
+export_presets.cfg
+
+# Unity
+Library/
+Temp/
+Obj/
+Build/
+
+# OS
+Thumbs.db
+.DS_Store
+*.tmp
+*.log
