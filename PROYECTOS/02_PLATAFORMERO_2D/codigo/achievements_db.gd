@@ -519,6 +519,114 @@ const DATA: Dictionary = {
             "evento": "all_secret_achievements",
             "minimo": 5
         }
+    },
+
+    # ===== NUEVOS — 2026-03-17 (5 logros) =====
+
+    "tramitacion_urgente": {
+        "nombre": "Tramitación Urgente",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Muere en los primeros 3 segundos de un nivel, 3 veces distintas.",
+        "icono": "⏱️",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 25,
+        "recompensa": {"tipo": "titulo", "valor": "El Más Eficiente"},
+        "frase_unlock": {
+            "thanatos": "Tres muertes instantáneas. Hay cierta elegancia en esa consistencia.",
+            "iris": "Espera, ¿lo estás haciendo a propósito? No. No lo creo.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "death_within_3s_of_level_start",
+            "valor": 3,
+            "exacto": false
+        }
+    },
+
+    "consulta_previa": {
+        "nombre": "Consulta Previa",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Pausa el juego 20 veces o más durante un solo nivel.",
+        "icono": "⏸️",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 20,
+        "recompensa": {"tipo": "titulo", "valor": "El Indeciso Oficial"},
+        "frase_unlock": {
+            "thanatos": "Veinte interrupciones al flujo de trabajo. Mis registros raramente llegan a tanto.",
+            "iris": "¿Necesitas un momento? ¿O veinte? Al parecer, veinte.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "pauses_in_single_level",
+            "valor": 20,
+            "exacto": false
+        }
+    },
+
+    "resolucion_definitiva": {
+        "nombre": "Resolución Definitiva",
+        "descripcion": "Derrota al último enemigo de un nivel con exactamente 1 de vida.",
+        "descripcion_secreta": "El filo entre existir y no existir",
+        "icono": "❤️",
+        "categoria": "habilidad",
+        "secreto": false,
+        "puntos": 50,
+        "recompensa": {"tipo": "cosmetic", "valor": "aura_roja_tenue"},
+        "frase_unlock": {
+            "thanatos": "Un punto de vida. La diferencia entre el archivo activo y el archivado.",
+            "iris": "Sobreviviste por... literalmente nada. Fue impresionante. No te lo diré de nuevo.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "level_last_kill_at_one_hp",
+            "nivel": "any"
+        }
+    },
+
+    "circular_sin_respuesta": {
+        "nombre": "Circular Sin Respuesta",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Activa la misma trampa o peligro exactamente 5 veces seguidas en un nivel, sin recibir daño de nada más entre medias.",
+        "icono": "🔁",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 35,
+        "recompensa": {"tipo": "skin", "valor": "bucle_infinito"},
+        "frase_unlock": {
+            "thanatos": "Cinco veces el mismo error. El Sistema llama a eso 'aprendizaje'. Yo lo llamo poesía.",
+            "iris": "Oye. Oye. Esa trampa no va a moverse. Nunca. ¿Lo sabes?",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "same_hazard_consecutive_deaths",
+            "valor": 5,
+            "exacto": true,
+            "sin_daño_intermedio": true
+        }
+    },
+
+    "manual_no_incluido": {
+        "nombre": "Manual de Usuario No Incluido",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Completa el Nivel 1 sin usar el dash ni una sola vez.",
+        "icono": "📵",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 40,
+        "recompensa": {"tipo": "skin", "valor": "sin_rastro"},
+        "frase_unlock": {
+            "thanatos": "Terminaste el primer nivel sin usar el protocolo de evasión estándar. No sé si eso es valentía o ignorancia.",
+            "iris": "El dash existe. Lo pusimos ahí. Fue un esfuerzo considerable. Solo digo.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "dash_used_in_level",
+            "nivel": "nivel_01",
+            "valor": 0,
+            "exacto": true
+        }
     }
 }
 
