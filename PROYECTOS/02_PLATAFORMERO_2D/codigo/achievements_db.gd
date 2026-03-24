@@ -519,6 +519,343 @@ const DATA: Dictionary = {
             "evento": "all_secret_achievements",
             "minimo": 5
         }
+    },
+
+    # ===== NUEVOS — 2026-03-17 (5 logros) =====
+
+    "tramitacion_urgente": {
+        "nombre": "Tramitación Urgente",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Muere en los primeros 3 segundos de un nivel, 3 veces distintas.",
+        "icono": "⏱️",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 25,
+        "recompensa": {"tipo": "titulo", "valor": "El Más Eficiente"},
+        "frase_unlock": {
+            "thanatos": "Tres muertes instantáneas. Hay cierta elegancia en esa consistencia.",
+            "iris": "Espera, ¿lo estás haciendo a propósito? No. No lo creo.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "death_within_3s_of_level_start",
+            "valor": 3,
+            "exacto": false
+        }
+    },
+
+    "consulta_previa": {
+        "nombre": "Consulta Previa",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Pausa el juego 20 veces o más durante un solo nivel.",
+        "icono": "⏸️",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 20,
+        "recompensa": {"tipo": "titulo", "valor": "El Indeciso Oficial"},
+        "frase_unlock": {
+            "thanatos": "Veinte interrupciones al flujo de trabajo. Mis registros raramente llegan a tanto.",
+            "iris": "¿Necesitas un momento? ¿O veinte? Al parecer, veinte.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "pauses_in_single_level",
+            "valor": 20,
+            "exacto": false
+        }
+    },
+
+    "resolucion_definitiva": {
+        "nombre": "Resolución Definitiva",
+        "descripcion": "Derrota al último enemigo de un nivel con exactamente 1 de vida.",
+        "descripcion_secreta": "El filo entre existir y no existir",
+        "icono": "❤️",
+        "categoria": "habilidad",
+        "secreto": false,
+        "puntos": 50,
+        "recompensa": {"tipo": "cosmetic", "valor": "aura_roja_tenue"},
+        "frase_unlock": {
+            "thanatos": "Un punto de vida. La diferencia entre el archivo activo y el archivado.",
+            "iris": "Sobreviviste por... literalmente nada. Fue impresionante. No te lo diré de nuevo.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "level_last_kill_at_one_hp",
+            "nivel": "any"
+        }
+    },
+
+    "circular_sin_respuesta": {
+        "nombre": "Circular Sin Respuesta",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Activa la misma trampa o peligro exactamente 5 veces seguidas en un nivel, sin recibir daño de nada más entre medias.",
+        "icono": "🔁",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 35,
+        "recompensa": {"tipo": "skin", "valor": "bucle_infinito"},
+        "frase_unlock": {
+            "thanatos": "Cinco veces el mismo error. El Sistema llama a eso 'aprendizaje'. Yo lo llamo poesía.",
+            "iris": "Oye. Oye. Esa trampa no va a moverse. Nunca. ¿Lo sabes?",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "same_hazard_consecutive_deaths",
+            "valor": 5,
+            "exacto": true,
+            "sin_daño_intermedio": true
+        }
+    },
+
+    "manual_no_incluido": {
+        "nombre": "Manual de Usuario No Incluido",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Completa el Nivel 1 sin usar el dash ni una sola vez.",
+        "icono": "📵",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 40,
+        "recompensa": {"tipo": "skin", "valor": "sin_rastro"},
+        "frase_unlock": {
+            "thanatos": "Terminaste el primer nivel sin usar el protocolo de evasión estándar. No sé si eso es valentía o ignorancia.",
+            "iris": "El dash existe. Lo pusimos ahí. Fue un esfuerzo considerable. Solo digo.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "dash_used_in_level",
+            "nivel": "nivel_01",
+            "valor": 0,
+            "exacto": true
+        }
+    }
+    # ===== NUEVOS — 2026-03-18 (5 logros) =====
+    # Inspiración: PEAK (Aggro Crab, co-op caótico), Hollow Knight: Silksong
+    # (dominio del movimiento aéreo), y patrones únicos detectados en indie 2025.
+    # Ideas originales extraídas del research:
+    #  1. PEAK → logro de agotamiento simultáneo de recursos en co-op
+    #  2. Silksong → logro de tiempo acumulado en el aire (dominio vertical)
+    #  3. Indie 2025 → logro de perseverancia ciega contra el mismo peligro
+
+    "reunion_de_emergencia": {
+        "nombre": "Reunión de Emergencia",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "En co-op, ambos jugadores se quedan sin munición exactamente al mismo segundo.",
+        "icono": "📭",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 40,
+        "recompensa": {"tipo": "cosmetic", "valor": "modo_cero_balas"},
+        "frase_unlock": {
+            "thanatos": "Ambos agotaron sus recursos de forma simultánea. El Sistema llama a eso 'sinergia'. Yo lo llamo catástrofe coordinada.",
+            "iris": "¿Lo planearon? ¿O fue instinto? No sé qué me preocupa más.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "coop_simultaneous_empty_ammo",
+            "tolerancia": 1.0
+        }
+    },
+
+    "delegacion_de_responsabilidad": {
+        "nombre": "Delegación de Responsabilidad",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Muere exactamente en el mismo punto del nivel 3 veces consecutivas, sin morir en ningún otro lugar entre medias.",
+        "icono": "📍",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 35,
+        "recompensa": {"tipo": "titulo", "valor": "El Geógrafo del Fracaso"},
+        "frase_unlock": {
+            "thanatos": "Tres muertes idénticas en coordenadas idénticas. He archivado patrones de comportamiento más complejos. Este no es uno de ellos.",
+            "iris": "Ese punto específico del mapa. Ese. Tres veces. ¿Puedes explicarlo? Porque yo no puedo.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "consecutive_deaths_at_same_position",
+            "valor": 3,
+            "exacto": true,
+            "tolerancia_px": 32
+        }
+    },
+
+    "hora_punta": {
+        "nombre": "Hora Punta",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Acumula más de 25 segundos en el aire (saltando o cayendo) dentro de un solo nivel.",
+        "icono": "🌤️",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 30,
+        "recompensa": {"tipo": "cosmetic", "valor": "estela_aerea"},
+        "frase_unlock": {
+            "thanatos": "Pasaste más tiempo en el aire que en el suelo. Eso no tiene precedentes en los registros de eficiencia burocrática.",
+            "iris": "¿Eres un pájaro? ¿Una excepción? El Sistema aún no tiene formulario para esto.",
+        },
+        "trigger": {
+            "tipo": "tiempo",
+            "evento": "airtime_in_level",
+            "valor": 25,
+            "exacto": false
+        }
+    },
+
+    "optimizacion_del_caos": {
+        "nombre": "Optimización del Caos",
+        "descripcion": "Mata 3 enemigos con un solo proyectil perforante.",
+        "descripcion_secreta": "La eficiencia como arte marcial",
+        "icono": "🎯",
+        "categoria": "habilidad",
+        "secreto": false,
+        "puntos": 45,
+        "recompensa": {"tipo": "cosmetic", "valor": "rastro_perforante"},
+        "frase_unlock": {
+            "thanatos": "Un proyectil, tres expedientes cerrados. Eficiencia máxima. No esperaba menos… aunque sí lo esperaba.",
+            "iris": "Eso fue ridículo. En el buen sentido. Completamente ridículo.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "piercing_multikill",
+            "valor": 3,
+            "exacto": false
+        }
+    },
+
+    "el_informe_anual": {
+        "nombre": "El Informe Anual",
+        "descripcion": "Desbloquea todos los logros de Habilidad.",
+        "descripcion_secreta": "El resumen de un año de dedicación sistemática",
+        "icono": "📊",
+        "categoria": "cosmetico",
+        "secreto": false,
+        "puntos": 75,
+        "recompensa": {"tipo": "skin", "valor": "uniforme_auditor"},
+        "frase_unlock": {
+            "thanatos": "Todos los logros de habilidad completados. He actualizado tu expediente con la categoría más alta disponible. Eso es algo.",
+            "iris": "¿Sabes cuántas anomalías de este calibre registro al año? Ninguna. Hasta ahora.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "all_skill_achievements",
+            "logros": ["procesamiento_eficiente", "sin_excepciones", "on_beat", "salto_de_fe", "combo_burocrático", "resolucion_definitiva", "optimizacion_del_caos"]
+        }
+    },
+
+    # ===== NUEVOS — 2026-03-24 (5 logros) =====
+    # Inspiración: Hollow Knight: Silksong (encadenar movimiento con narrativa),
+    # Clair Obscur: Expedition 33 (timing de combate + cooperación táctica),
+    # PEAK (asimetría total en co-op), Blue Prince (exploración sin mapa).
+    # Ideas originales:
+    #  1. Silksong → logro por leer todo el diálogo (recompensa narrativa sobre mecánica)
+    #  2. BeatSync extendido → partitura perfecta nivel completo (skill extremo)
+    #  3. Checkpoint abuse → quedarse varado en el mismo checkpoint repitiéndolo
+    #  4. Co-op asimétrico → uno mata todo, el otro no mata nada (líder/becario)
+    #  5. Coleccionista de categorías → al menos 1 logro de cada tipo
+
+    "revision_exhaustiva": {
+        "nombre": "Revisión Exhaustiva",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "No saltes ninguna línea de diálogo durante un nivel entero.",
+        "icono": "📖",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 25,
+        "recompensa": {"tipo": "titulo", "valor": "Lector Certificado"},
+        "frase_unlock": {
+            "thanatos": "Leíste cada palabra. Cada línea. Yo misma escribí muchas de ellas. No esperaba que nadie llegara hasta el final. Gracias.",
+            "iris": "Eso fue... un poco raro. En el buen sentido. Nadie hace eso. Oye, ¿leíste también mis partes? Sí, ¿verdad? Lo sabía.",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "dialogue_lines_skipped_in_level",
+            "valor": 0,
+            "exacto": true,
+            "nivel": "any"
+        }
+    },
+
+    "partitura_perfecta": {
+        "nombre": "Partitura Perfecta",
+        "descripcion": "Completa un nivel matando todos los enemigos on beat (±80ms).",
+        "descripcion_secreta": "El Sistema también tiene un pulso",
+        "icono": "🎼",
+        "categoria": "habilidad",
+        "secreto": false,
+        "puntos": 60,
+        "recompensa": {"tipo": "cosmetic", "valor": "estela_musical"},
+        "frase_unlock": {
+            "thanatos": "Cada eliminación sincronizada. El ritmo del Sistema no es una metáfora para ti. Es un instrumento. Impresionante y ligeramente perturbador.",
+            "iris": "Acabas de hacer el nivel entero como si fuera una coreografía. Me alegra que estés de nuestro lado.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "level_all_kills_on_beat",
+            "minimo_enemigos": 8,
+            "nivel": "any"
+        }
+    },
+
+    "reforma_administrativa": {
+        "nombre": "Reforma Administrativa",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "Activa un checkpoint y muere 5 veces seguidas desde él sin avanzar ni un metro.",
+        "icono": "🔄",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 30,
+        "recompensa": {"tipo": "titulo", "valor": "Experto en Procesos"},
+        "frase_unlock": {
+            "thanatos": "Cinco regresos al mismo punto de control. Sin progreso. Sin variación. El Sistema define eso como 'adherencia al protocolo'. Yo lo defino como rendición disfrazada de rutina.",
+            "iris": "Oye. El checkpoint no va a cambiar. Tú tampoco, al parecer. ¿Necesitas que hablemos de esto?",
+        },
+        "trigger": {
+            "tipo": "contador",
+            "evento": "deaths_from_same_checkpoint",
+            "valor": 5,
+            "exacto": false,
+            "sin_avance_minimo": 64
+        }
+    },
+
+    "jefe_y_becario": {
+        "nombre": "Jefe y Becario",
+        "descripcion": "[SECRETO]",
+        "descripcion_secreta": "En co-op, un jugador mata 10+ enemigos y el otro no mata ninguno en el mismo nivel.",
+        "icono": "👔",
+        "categoria": "secreto",
+        "secreto": true,
+        "puntos": 35,
+        "recompensa": {"tipo": "cosmetic", "valor": "titulo_flotante_jefe_becario"},
+        "frase_unlock": {
+            "thanatos": "Distribución de tareas completamente asimétrica. Un expediente activo, uno de apoyo. El Sistema reconoce esta jerarquía. Yo la encuentro vagamente cómica.",
+            "iris": "Alguien hizo todo el trabajo. El otro... existió. Y obtuvieron el mismo logro. Eso es lo más burocrático que ha pasado en este juego.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "coop_kill_asymmetry",
+            "kills_p1_min": 10,
+            "kills_p2_max": 0,
+            "nivel": "any"
+        }
+    },
+
+    "expediente_diverso": {
+        "nombre": "Expediente Diverso",
+        "descripcion": "Desbloquea al menos un logro de cada categoría.",
+        "descripcion_secreta": "Un archivo completo, aunque incompleto",
+        "icono": "🗂️",
+        "categoria": "cosmetico",
+        "secreto": false,
+        "puntos": 50,
+        "recompensa": {"tipo": "hud_element", "valor": "barra_categorias_colores"},
+        "frase_unlock": {
+            "thanatos": "Historia. Habilidad. Secretos. Co-op. Cosmético. Tienes al menos uno de cada departamento. El Sistema no sabe cómo clasificarte. Eso es inusual. Y correcto.",
+            "iris": "Hiciste un poco de todo. No eres especialista en nada. Eso me parece perfecto. Bienvenido al club de las anomalías multifuncionales.",
+        },
+        "trigger": {
+            "tipo": "evento",
+            "evento": "one_per_category_unlocked",
+            "categorias": ["historia", "habilidad", "secreto", "coop", "cosmetico"]
+        }
     }
 }
 
